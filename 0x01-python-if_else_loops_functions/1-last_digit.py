@@ -4,8 +4,9 @@ number = random.randint(-10000, 10000)
 number_string = repr(number)
 last = int(number_string[-1])
 if last > 5:
-    print(f"Last digit of {number:d} is {last} and is greater than {5:d}")
+    print(f"Last digit of {number} is {last} and is greater than 5")
 elif last == 0:
-    print(f"Last digit of {number:d} is {last} and is {0:d}")
-else:
-    print(f"Last digit of {number:d} is {last} and is less than {6:d} and not {0:d}")
+    print(f"Last digit of {number} is {last} and is 0")
+elif last < 6 and last != 0:
+    print(f"Last digit of {number:d} is {last} and is\
+ less than 6 and not 0")
