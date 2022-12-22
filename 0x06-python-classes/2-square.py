@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-"""class Square that defines a square """
+"""A class Square that define a square"""
 
 
 class Square:
-    """a class Square that defines a square"""
+    """Declearing class"""
 
     def __init__(self, size=0):
-        """initializing object/instance"""
+        """Initializing object/instance"""
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
