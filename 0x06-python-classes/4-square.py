@@ -16,7 +16,7 @@ class Square:
     def area(self):
         """Returning the square area of the object"""
         return (self.__size ** 2)
-    
+
     @property
     def size(self):
         """A getter for instance attribute size
