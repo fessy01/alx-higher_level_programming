@@ -14,20 +14,21 @@ class Square:
         self.__size = size
 
     def area(self):
-        """eturning the square area of the object"""
+        """Returning the square area of the object"""
         return (self.__size ** 2)
-
+    
     @property
     def size(self):
-        """ Method to returns the size value"""
+        """A getter for instance attribute size
+        Returns the value of ``__size``"""
         return self.__size
 
     @size.setter
-    def size(self, value):
-        """ Method to set the size value of the square object"""
+    def size(self, size):
+        """A setter for instance attribute size
+        Sets a value for ``__size``"""
         if type(size) is not int:
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = size
