@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-
-""" The module consist of the class of a rectangle """
+""" The module consist of the class of a rectangle"""
 
 
 class Rectangle:
