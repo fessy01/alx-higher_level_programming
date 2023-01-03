@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" The module consist of the class of a rectangle"""
+""" An empty class Rectangle"""
 
 
 class Rectangle:
-    """This is a class that define a rectangle"""
+    """an empty class Rectangle that define a rectangle"""
     def __init__(self, width=0, height=0):
         """Initializing the instance"""
         self.width = width
