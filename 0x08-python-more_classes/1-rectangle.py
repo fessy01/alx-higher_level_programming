@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" This is module that consist the class of a rectangle"""
+""" This module contain tha class of rectangle
+"""
 
 
 class Rectangle:
-    """ This is a class that define a rectangle"""
+    """ The class that define rectangle"""
     def __init__(self, width=0, height=0):
         """ Instantiation with optional width and height"""
         self.width = width
@@ -11,13 +12,14 @@ class Rectangle:
 
     @property
     def width(self):
-             """ Method of returning the value of width"""
+        """ method of returning width
+        """
         return self.__width
 
     @property
     def height(self):
-        """ Method of returning the value of height"""
-
+        """method of returning height
+        """
         return self.__height
 
     @width.setter
@@ -39,3 +41,4 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
